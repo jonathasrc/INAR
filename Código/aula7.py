@@ -1,4 +1,7 @@
+# -*- coding: utf-8 -*-
+
 '''import numpy as np
+
 from sklearn import datasets
 from sklearn.neighbors import KNeighborsClassifier
 iris_datasset = datasets.load_iris()

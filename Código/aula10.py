@@ -38,9 +38,11 @@ from sklearn.datasets import load_breast_cancer
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import MinMaxScaler
 cancer = load_breast_cancer()
+print cancer.data[:, :2]
 X_train, X_test, y_train, y_test = train_test_split(
         cancer.data, cancer.target,
         random_state=0)
+
 svm = SVC(C=100)
 scaler = MinMaxScaler()
 scaler.fit(X_train)
