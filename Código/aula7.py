@@ -118,6 +118,7 @@ import matplotlib.pyplot as plt
 from sklearn import svm, datasets
 iris = datasets.load_iris()
 X = iris.data[:, :2]
+print X
 y = iris.target
 h = .02
 C = 1.0
